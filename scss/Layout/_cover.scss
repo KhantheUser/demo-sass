@@ -1,0 +1,47 @@
+.myCover{
+    background-image: url('../img/telogy.jpg');
+    background-repeat: no-repeat;
+    background-size : 100% 100%;
+    background-position : center center;
+    height : 500px;
+    position: relative;
+    .cover_content{
+        position : absolute;
+        top : 30%;
+        left : 10%;
+        width : 36%;
+        .cover_heading{
+            @include text($color-white-0 , $fs-4 , $fw-bold-1)
+        }
+        .cover_title{
+            @include text($color-white-0 , $fs-2 - 2 , $fw-normal)
+        }
+        .input_search{
+            .form-control{
+                padding :$pd-2;
+                border-radius : 0;
+                &::placeholder{
+                    @include text($color-gray-2, $fs-2 - 3,$fw-normal)
+                }
+                &:focus{
+                    box-shadow: none;
+                    border : none;
+
+                }
+            }
+            .input-group-append{
+                .input-group-text{
+                    background-color: $color-white-0;
+                    color : $color-red-0;
+                    border : none;
+                    &:hover{
+                        cursor: pointer;
+                        background-color:$color-red-0 ;
+                        color : $color-white-0;
+                    }
+                }
+            }
+        }
+
+    }
+}

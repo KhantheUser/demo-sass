@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #29303b;
+  background-color: #fff;
+  line-height: 1.43; }
+
+.myNavBar {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #cacbcc; }
+  .myNavBar.headerClass {
+    border-bottom: 5px solid #007791; }
+  .myNavBar .navbar-brand {
+    flex-grow: 1; }
+    .myNavBar .navbar-brand img {
+      width: 110px;
+      height: 42px; }
+  .myNavBar .categories {
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal;
+    align-self: center;
+    flex-grow: 1; }
+  .myNavBar .input_search {
+    flex-grow: 5;
+    align-self: center; }
+    .myNavBar .input_search .form-control {
+      background-color: rgba(20, 23, 28, 0.05);
+      border: none;
+      transition: none; }
+      .myNavBar .input_search .form-control:focus {
+        box-shadow: none;
+        background-color: #fff;
+        border-top: 1px solid #cacbcc;
+        border-left: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc; }
+      .myNavBar .input_search .form-control:focus + .input-group-append .input-group-text {
+        color: #ec5252;
+        background-color: #fff;
+        border-top: 1px solid #cacbcc;
+        border-right: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc; }
+      .myNavBar .input_search .form-control:focus + .input-group-append:hover {
+        cursor: pointer; }
+        .myNavBar .input_search .form-control:focus + .input-group-append:hover .input-group-text {
+          color: #fff;
+          background-color: #ec5252; }
+    .myNavBar .input_search .input-group-append .input-group-text {
+      background-color: rgba(20, 23, 28, 0.05);
+      color: #ec5252;
+      border: none; }
+    .myNavBar .input_search .input-group-append:hover {
+      cursor: pointer; }
+      .myNavBar .input_search .input-group-append:hover .input-group-text {
+        color: #fff;
+        background-color: #ec5252; }
+  .myNavBar .navbar-nav {
+    flex-grow: 1;
+    justify-content: space-between; }
+    .myNavBar .navbar-nav .nav-item_icon-shopping {
+      font-size: 16px; }
+    .myNavBar .navbar-nav .nav-item {
+      padding: 5px 10px; }
+      .myNavBar .navbar-nav .nav-item .nav-link {
+        color: #505763;
+        font-size: 13px;
+        font-weight: normal; }
+      .myNavBar .navbar-nav .nav-item:hover {
+        background-color: rgba(20, 23, 28, 0.05); }
+    .myNavBar .navbar-nav .nav-item:nth-child(3) {
+      border-radius: 50%; }
+    .myNavBar .navbar-nav .nav-item--non-back:hover {
+      background-color: #fff; }
+  @media screen and (max-width: 1200px) {
+    .myNavBar .business, .myNavBar .instructor {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .myNavBar .categories, .myNavBar .input_search {
+      display: none; } }
+
+.myCover {
+  background-image: url("../img/telogy.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 500px;
+  position: relative; }
+  .myCover .cover_content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 36%; }
+    .myCover .cover_content .cover_heading {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700; }
+    .myCover .cover_content .cover_title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: normal; }
+    .myCover .cover_content .input_search .form-control {
+      padding: 15px;
+      border-radius: 0; }
+      .myCover .cover_content .input_search .form-control::placeholder {
+        color: #a1a7b3;
+        font-size: 17px;
+        font-weight: normal; }
+      .myCover .cover_content .input_search .form-control:focus {
+        box-shadow: none;
+        border: none; }
+    .myCover .cover_content .input_search .input-group-append .input-group-text {
+      background-color: #fff;
+      color: #ec5252;
+      border: none; }
+      .myCover .cover_content .input_search .input-group-append .input-group-text:hover {
+        cursor: pointer;
+        background-color: #ec5252;
+        color: #fff; }
+
+.myIntro {
+  background-image: linear-gradient(to right, #13407c, #1c3144); }
+  .myIntro .intro_content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px; }
+    .myIntro .intro_content .intro_item {
+      align-items: center; }
+      .myIntro .intro_content .intro_item .intro_icon {
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        margin-right: 25px; }
+      .myIntro .intro_content .intro_item .intro_icon-content {
+        padding-top: 16px; }
+        .myIntro .intro_content .intro_item .intro_icon-content p:first-child {
+          color: #fff;
+          font-size: 17px;
+          font-weight: bold;
+          margin-bottom: 0; }
+        .myIntro .intro_content .intro_item .intro_icon-content p:last-child {
+          color: #fff;
+          font-size: 17px;
+          font-weight: normal; }
+
+.myCourses {
+  margin-top: 25px; }
+  .myCourses .course_content {
+    width: 80%;
+    margin: 0 auto; }
+    .myCourses .course_content .course_introduce {
+      padding-top: 4rem; }
+      .myCourses .course_content .course_introduce .course_title {
+        color: #29303b;
+        font-size: 40px;
+        font-weight: normal; }
+    .myCourses .course_content .myTab .nav {
+      justify-content: space-between;
+      border-bottom: none; }
+      .myCourses .course_content .myTab .nav .nav-item:hover .nav-link {
+        border: none; }
+      .myCourses .course_content .myTab .nav .nav-item .nav-link {
+        border: none;
+        position: relative; }
+        .myCourses .course_content .myTab .nav .nav-item .nav-link::after {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 5px;
+          width: 0px;
+          background-color: #007791; }
+        .myCourses .course_content .myTab .nav .nav-item .nav-link:focus::after {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 5px;
+          width: 100%;
+          transition: all 0.35s linear;
+          background-color: #007791; }
+      .myCourses .course_content .myTab .nav .nav-item .nav-link.active {
+        border: none; }
+        .myCourses .course_content .myTab .nav .nav-item .nav-link.active::after {
+          content: "";
+          position: absolute;
+          display: block;
+          height: 5px;
+          width: 80%;
+          background-color: #007791; }
+      .myCourses .course_content .myTab .nav .nav-item .nav-link {
+        color: #29303b;
+        font-size: 15px;
+        font-weight: normal;
+        border: none; }
+    .myCourses .course_content .myTab .tab-content {
+      margin-top: 25px;
+      position: relative; }
+      .myCourses .course_content .myTab .tab-content .card-title {
+        color: #29303b;
+        font-size: 15px;
+        font-weight: bold; }
+      .myCourses .course_content .myTab .tab-content .card-text {
+        color: #686f7a;
+        font-size: 13px;
+        font-weight: normal; }
+      .myCourses .course_content .myTab .tab-content .rating {
+        display: flex; }
+        .myCourses .course_content .myTab .tab-content .rating .rating_star {
+          color: #F4C150;
+          font-size: 13px;
+          font-weight: normal; }
+        .myCourses .course_content .myTab .tab-content .rating span:nth-child(2) {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: bold;
+          margin: 0 2px; }
+        .myCourses .course_content .myTab .tab-content .rating span:last-child {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: normal; }
+      .myCourses .course_content .myTab .tab-content .price {
+        margin-top: 10px;
+        text-align: right; }
+        .myCourses .course_content .myTab .tab-content .price .old_price {
+          color: #686f7a;
+          font-size: 13px;
+          font-weight: normal;
+          text-decoration: line-through; }
+        .myCourses .course_content .myTab .tab-content .price .new_price {
+          color: #29303b;
+          font-size: 15px;
+          font-weight: bold; }
+
+.owl-prev {
+  outline: none;
+  position: absolute;
+  top: 37%;
+  left: -4%;
+  padding: 0;
+  height: 45px;
+  width: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1); }
+  .owl-prev span {
+    color: #007791;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.6; }
+
+.owl-next {
+  outline: none;
+  position: absolute;
+  top: 37%;
+  right: -4%;
+  padding: 0;
+  height: 45px;
+  width: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1); }
+  .owl-next span {
+    color: #007791;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.6; }
+
+.myStudent {
+  margin-top: 25px; }
+  .myStudent .student_content {
+    width: 80%;
+    margin: 0 auto; }
+    .myStudent .student_content .card-title {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: bold; }
+    .myStudent .student_content .card-text {
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: normal; }
+    .myStudent .student_content .rating {
+      display: flex; }
+      .myStudent .student_content .rating .rating_star {
+        color: #F4C150;
+        font-size: 13px;
+        font-weight: normal; }
+      .myStudent .student_content .rating span:nth-child(2) {
+        color: #686f7a;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 2px; }
+      .myStudent .student_content .rating span:last-child {
+        color: #686f7a;
+        font-size: 13px;
+        font-weight: normal; }
+    .myStudent .student_content .price {
+      margin-top: 10px;
+      text-align: right; }
+      .myStudent .student_content .price .old_price {
+        color: #686f7a;
+        font-size: 13px;
+        font-weight: normal;
+        text-decoration: line-through; }
+      .myStudent .student_content .price .new_price {
+        color: #29303b;
+        font-size: 15px;
+        font-weight: bold; }
+
+.btn--white {
+  color: #686f7a;
+  background-color: #fff;
+  font-weight: 600;
+  border: 1px solid #505763; }
+  .btn--white:hover {
+    background-color: rgba(20, 23, 28, 0.05); }
+
+.btn--red {
+  color: #fff;
+  background-color: #ec5252;
+  font-weight: 600;
+  border: 1px solid #ec5252; }
+  .btn--red:hover {
+    background-color: #521822; }
+  .btn--red:hover {
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

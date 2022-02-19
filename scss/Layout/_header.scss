@@ -1,0 +1,111 @@
+.myNavBar{
+    position: fixed;
+    z-index: 10;
+    right : 0 ;
+    left : 0;
+    
+    background-color : #fff;
+
+    border-bottom: 1px solid $color-gray-3;
+    &.headerClass{
+    border-bottom: 5px solid $color-blue;
+
+    }
+    .navbar-brand{
+        flex-grow : 1;
+        img{
+            width : 110px;
+            height : 42px
+        }
+    }
+    .categories{
+        @include text($color-black-light , $fs-1 , $fw-normal);
+        // display: inline-block;
+        align-self: center;
+        flex-grow : 1
+    }
+    .input_search{
+        flex-grow : 5;
+        align-self: center;
+        .form-control{
+            background-color : $color-gray-1;
+            border : none;
+            transition:none;
+            &:focus{
+                box-shadow: none;
+                background-color : $color-white-0;
+                border-top :1px solid $color-gray-3;
+                border-left :1px solid $color-gray-3;
+                border-bottom :1px solid $color-gray-3;
+            }
+            &:focus + .input-group-append{
+                .input-group-text{
+                color:$color-red-0;
+                background-color : $color-white-0;
+                border-top :1px solid $color-gray-3;
+                border-right :1px solid $color-gray-3;
+                border-bottom :1px solid $color-gray-3;
+                }
+                &:hover{
+                    .input-group-text{
+                        color :$color-white-0;
+                        background-color:$color-red-0 ;
+                    }
+                    cursor: pointer;
+                }
+
+            }
+        }
+        .input-group-append{
+            .input-group-text{
+                background-color :$color-gray-1;
+                color:$color-red-0;
+                border : none;
+            }
+            &:hover{
+                .input-group-text{
+                    color :$color-white-0;
+                    background-color:$color-red-0 ;
+                    
+                }
+                cursor: pointer;
+            }
+            
+        }
+    }
+    
+    .navbar-nav{
+        .nav-item_icon-shopping{
+            font-size:16px
+        }
+        flex-grow: 1;
+        justify-content: space-between;
+        .nav-item{
+            padding : $pd-0 $pd-1;
+            .nav-link {
+                @include text($color-black-light , $fs-1 , $fw-normal)
+            }
+            &:hover{
+                background-color : $color-gray-1;
+            }
+        }
+        .nav-item:nth-child(3){
+            border-radius: 50%;
+        }
+        .nav-item--non-back:hover{
+            background-color : $color-white-0
+        }
+       
+    }
+    @include response-to('extra-large'){
+        .business , .instructor{
+            display : none;
+        }
+    }
+    @include response-to('medium'){
+       .categories , .input_search{
+           display : none;
+       }
+    }
+    
+}

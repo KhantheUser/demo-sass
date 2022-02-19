@@ -1,0 +1,39 @@
+.owl-prev{
+    outline:none;
+    position: absolute;
+    top : 37%;
+    left: -4%;
+    padding:0;
+    
+    height : 45px;
+    width : 45px;
+    border-radius : 50% !important;
+    background-color : #fff !important;
+    box-shadow : 0 2px 8px 2px rgba(20,23,28,0.1);
+    
+
+    span{
+        @include text($color-blue,$fs-4,$fw-normal);
+        line-height :0.6
+
+    }
+}
+.owl-next{
+    
+    outline:none;
+    position: absolute;
+    top : 37%;
+    right: -4%;
+    padding:0;
+    
+    height : 45px;
+    width : 45px;
+    border-radius : 50% !important;
+    background-color : #fff !important;
+    box-shadow : 0 2px 8px 2px rgba(20,23,28,0.1);
+    span{
+        @include text($color-blue,$fs-4,$fw-normal);
+        line-height :0.6
+
+    }
+}
